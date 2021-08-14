@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:uuid/uuid.dart';
 
-main() async {
+main() {
   Map simplenotes = json.decode(
       File(Directory.current.path + '/simplenote.json').readAsStringSync());
   Map<String, List<Map<String, dynamic>>> standardnotes = {"items": []};
